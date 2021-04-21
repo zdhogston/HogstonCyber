@@ -98,7 +98,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Elk Server to check that the installation worked as expected.
 
 - _Which file is the playbook? Where do you copy it? 
-The playbook is filebeat-playbook.yml (TODO) and you copy it to /etc/ansible/roles/ directory. 
+The playbook is filebeat-playbook.yml and you copy it to /etc/ansible/roles/ directory. 
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
 You would need to update filebeat.yml, and specific in /etc/ansible/hosts/ the private ip addresses of the machines into groups. For mine, I created groups 'webservers' and 'elk' so they playbooks only run actions on the designated hosts. 
